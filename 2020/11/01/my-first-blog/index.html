@@ -115,9 +115,31 @@
 
     <div class="content">
         <p>这篇文章是构建博客的一些常用指令，帮助我在初期能更快的搭建博客</p>
-<ul>
+<h2 id="创建博客的步骤"><a href="#创建博客的步骤" class="headerlink" title="创建博客的步骤"></a>创建博客的步骤</h2><ol>
+<li>打开本地hexo文件夹，在根目录下输入hexo new ‘博客名’</li>
+<li>hexo会在’source/_post/‘文件夹下生成相关md文件，然后就可以本地修改了</li>
+</ol>
+<h2 id="关于hexo命令行"><a href="#关于hexo命令行" class="headerlink" title="关于hexo命令行"></a>关于hexo命令行</h2><ul>
+<li>hexo new “postName” 新建文章</li>
+<li>hexo new page “pageName” 新建页面</li>
+<li>hexo generate 生成静态页面至public目录</li>
+<li>hexo server 开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
+<li>hexo deploy 部署到GitHub</li>
+<li>hexo help  查看帮助</li>
+<li>hexo version  查看Hexo的版本</li>
+</ul>
+<h3 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h3><ul>
+<li>hexo n == hexo new</li>
+<li>hexo g == hexo generate</li>
+<li>hexo s == hexo server</li>
+<li>hexo d == hexo deploy</li>
+</ul>
+<h3 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h3><ul>
 <li>hexo s -g 保存并生成本地预览</li>
 <li>hexo d -g 生成并上传更新</li>
+</ul>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>在访问博客前要设置网络的DNS服务器地址为114.114.114.114，否则会访问不了</li>
 </ul>
 
     </div>
