@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  
+  <title>github博客构建指南 - Hexo</title>
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/friends">Friends</a>
+            
+            
+            
+            <a class="nav-item" href="/projects">Projects</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/MrWillCom" target="_blank">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-codepen nav-item-icon" href="https://codepen.io/mrwillcom" target="_blank">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-patreon nav-item-icon" href="https://www.patreon.com/MrWillCom" target="_blank">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        <article class="post">
+    <div class="meta">
+        
+        <div class="date" id="date">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <span>November</span>
+            
+            
+            <span>8,</span>
+            <span>2020</span>
+        </div>
+        
+
+        <h2 class="title">github博客构建指南</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <p>帮助我们搭建基于GitHub的博客，并绑定自己的域名</p>
+<h2 id="环境搭建和基本配置"><a href="#环境搭建和基本配置" class="headerlink" title="环境搭建和基本配置"></a>环境搭建和基本配置</h2><p>准备：</p>
+<ul>
+<li>GitHub账号、node.js、npm、gitbash（此处推荐cmder）、域名（godaddy、阿里云、腾讯云都可以买）</li>
+</ul>
+<p>步骤：</p>
+<ol>
+<li><p>GitHub上创建一个名为‘你的用户名.github.io’的仓库，比如说我的就是taobowen.github.io，将来你博客的其中一个访问地址就是‘你的用户名.github.io’了。创建时间比较久，大概20-30分钟。</p>
+</li>
+<li><p>绑定域名<br><img src="/img/create_blog.png"><br>如上图，首先我们在DNSPod上的‘DNS解析-我的域名’处添加并配置自己的域名，域名解析配置最常见有2种方式，CNAME和A记录，CNAME填写域名，A记录填写IP，IP通过ping远端博客仓库域名获取，由于不带www的域名访问方式只能采用A记录，因此最好两个都配置。<br>在远端博客的根目录新建一个CNAME文件（无后缀），里面填写自己的域名，绑定了新域名后，访问原来的域名‘用户名.github.io’会自动跳转到新的域名。</p>
+</li>
+<li><p>配置SSH秘钥<br><code>$ cd ~/. ssh #检查本机已存在的ssh密钥</code><br>找不到，说明是第一次使用Git<br><code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code><br>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key<br>将刚复制的内容粘贴到key那里，title随便填，保存<br>最后，在博客blog目录下，右键选Git Baes Here,命令行中输入，其中的name和email替换成你自己的用户名和邮箱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;liuxianan&quot;&#x2F;&#x2F; 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  &quot;xxx@qq.com&quot;&#x2F;&#x2F; 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>连通性测试<br>输入以下命令：<br><code> $ ssh -T git@github.com # 注意邮箱地址不用改</code></p>
+</li>
+<li><p>配置Hexo</p>
+</li>
+</ol>
+<p>安装：npm install -g hexo<br>初始化：挑选一个以后准备存放代码的地方新建一个名为hexo的文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd &#x2F;f&#x2F;Workspaces&#x2F;hexo&#x2F;</span><br><span class="line">$ hexo init</span><br><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
+<p>执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的，hexo s是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容，打不开多半是端口被占用了</p>
+<h2 id="扩展配置"><a href="#扩展配置" class="headerlink" title="扩展配置"></a>扩展配置</h2><ol>
+<li>修改主题</li>
+</ol>
+
+    </div>
+
+    <div class="about">
+        <h1>About this Post</h1>
+        <p>This post is written by John Doe, licensed under <a
+                target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a>.</p>
+    </div>
+</article>
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h4 class="title">Blog</h4>
+                
+                <a href="/" class="item" target="_blank">Blog</a>
+                
+                <a href="/archives" class="item" target="_blank">Archives</a>
+                
+                <a href="/friends" class="item" target="_blank">Friends</a>
+                
+                <a href="/projects" class="item" target="_blank">Projects</a>
+                
+                <a href="/about" class="item" target="_blank">About</a>
+                
+                <a href="/atom.xml" class="item" target="_blank">RSS</a>
+                
+            </div>
+            
+            <div class="group">
+                <h4 class="title">Projects</h4>
+                
+                <a href="https://github.com/transmister" class="item" target="_blank">Transmister</a>
+                
+                <a href="https://github.com/MrWillCom/css-and-js-windows-uwp-xaml-controls" class="item" target="_blank">CSS&amp;JS Windows UWP XAML Controls</a>
+                
+                <a href="https://github.com/MrWillCom/hexo-theme-cupertino" class="item" target="_blank">Theme Cupertino</a>
+                
+                <a href="https://github.com/MrWillCom/github-dark-mode" class="item" target="_blank">GitHub Dark Mode</a>
+                
+            </div>
+            
+            <div class="group">
+                <h4 class="title">Me</h4>
+                
+                <a href="https://github.com/MrWillCom" class="item" target="_blank">GitHub</a>
+                
+                <a href="https://codepen.io/mrwillcom" class="item" target="_blank">CodePen</a>
+                
+                <a href="https://www.patreon.com/MrWillCom" class="item" target="_blank">Patreon</a>
+                
+                <a href="mailto:mr.will.com@outlook.com" class="item" target="_blank">Email</a>
+                
+            </div>
+            
+        </div>
+        &copy; 2020 John Doe<br />
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+</footer>
+
+        
+<script src="/js/main.js"></script>
+
+    </body>
+</html>
