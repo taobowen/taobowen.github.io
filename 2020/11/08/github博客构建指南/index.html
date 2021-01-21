@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="帮助我们搭建基于GitHub的博客，并绑定自己的域名 环境搭建和基本配置准备：  GitHub账号、node.js、npm、gitbash（此处推荐cmder）、域名（godaddy、阿里云、腾讯云都可以买）  步骤：  GitHub上创建一个名为‘你的用户名.github.io’的仓库，比如说我的就是taobowen.github.io，将来你博客的其中一个访问地址就是‘你的用户名.github">
+  <meta name="description" content="帮助我们搭建基于GitHub的博客，并绑定自己的域名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github博客构建指南">
 <meta property="og:url" content="http://example.com/2020/11/08/github%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="Joker的个人博客">
-<meta property="og:description" content="帮助我们搭建基于GitHub的博客，并绑定自己的域名 环境搭建和基本配置准备：  GitHub账号、node.js、npm、gitbash（此处推荐cmder）、域名（godaddy、阿里云、腾讯云都可以买）  步骤：  GitHub上创建一个名为‘你的用户名.github.io’的仓库，比如说我的就是taobowen.github.io，将来你博客的其中一个访问地址就是‘你的用户名.github">
+<meta property="og:description" content="帮助我们搭建基于GitHub的博客，并绑定自己的域名">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/create_blog.png">
 <meta property="article:published_time" content="2020-11-08T12:23:38.000Z">
-<meta property="article:modified_time" content="2021-01-19T14:50:53.573Z">
+<meta property="article:modified_time" content="2021-01-21T14:56:07.453Z">
 <meta property="article:author" content="Joker">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
@@ -198,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-19 22:50:53" itemprop="dateModified" datetime="2021-01-19T22:50:53+08:00">2021-01-19</time>
+                <time title="修改时间：2021-01-21 22:56:07" itemprop="dateModified" datetime="2021-01-21T22:56:07+08:00">2021-01-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -207,10 +207,6 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
                 </span>
             </span>
 
@@ -222,6 +218,7 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
+            <div class="post-description">帮助我们搭建基于GitHub的博客，并绑定自己的域名</div>
 
         </div>
       </header>
@@ -232,8 +229,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>帮助我们搭建基于GitHub的博客，并绑定自己的域名</p>
-<h2 id="环境搭建和基本配置"><a href="#环境搭建和基本配置" class="headerlink" title="环境搭建和基本配置"></a>环境搭建和基本配置</h2><p>准备：</p>
+        <h2 id="环境搭建和基本配置"><a href="#环境搭建和基本配置" class="headerlink" title="环境搭建和基本配置"></a>环境搭建和基本配置</h2><p>准备：</p>
 <ul>
 <li>GitHub账号、node.js、npm、gitbash（此处推荐cmder）、域名（godaddy、阿里云、腾讯云都可以买）</li>
 </ul>
@@ -254,9 +250,15 @@
 <p>安装：npm install -g hexo<br>初始化：挑选一个以后准备存放代码的地方新建一个名为hexo的文件夹</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd &#x2F;f&#x2F;Workspaces&#x2F;hexo&#x2F;</span><br><span class="line">$ hexo init</span><br><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
 <p>执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的，hexo s是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容，打不开多半是端口被占用了</p>
-<h2 id="扩展配置"><a href="#扩展配置" class="headerlink" title="扩展配置"></a>扩展配置</h2><ol>
-<li>修改主题</li>
+<h2 id="扩展配置"><a href="#扩展配置" class="headerlink" title="扩展配置"></a>扩展配置</h2><p>根目录下的_config.yml就是我们博客的站点配置文件，我们可以在这编辑语言、博客描述、博客主题等一些基础配置。</p>
+<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>在themes目录下是我们本地所有的主题文件，我们可以在该目录下直接clone自己喜欢的主题。主题目录下的_config.yml文件就是该主题的配置文件，在这可以进行一些更详细的设置。<br>比如：</p>
+<ol>
+<li>文章阅读计数</li>
+<li>博客访问计数</li>
+<li>评论</li>
 </ol>
+<h3 id="文章阅读计数"><a href="#文章阅读计数" class="headerlink" title="文章阅读计数"></a>文章阅读计数</h3><p>给文章阅读计数我们需要用到的是leancload。</p>
+<h3 id="博客访问计数"><a href="#博客访问计数" class="headerlink" title="博客访问计数"></a>博客访问计数</h3><p>博客站点的访问计数我们可以用‘不蒜子’，百度就可以查到，使用很方便，但是要注意使用最新的链接，网上很多参考文章里的都比较老，直接复制是用不了的。</p>
 
     </div>
 
@@ -278,7 +280,10 @@
     <a href="/2020/11/01/my-first-blog/" rel="prev" title="使用hexo构建博客的常用操作和命令行">
       <i class="fa fa-chevron-left"></i> 使用hexo构建博客的常用操作和命令行
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/01/21/%E5%85%B3%E4%BA%8E2021/" rel="next" title="关于2021">
+      关于2021 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -337,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%92%8C%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">环境搭建和基本配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">扩展配置</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%92%8C%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">环境搭建和基本配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">扩展配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E8%AE%A1%E6%95%B0"><span class="nav-number">2.2.</span> <span class="nav-text">文章阅读计数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E8%AE%A1%E6%95%B0"><span class="nav-number">2.3.</span> <span class="nav-text">博客访问计数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -351,7 +356,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -360,7 +365,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
