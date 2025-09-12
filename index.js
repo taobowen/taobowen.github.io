@@ -1297,7 +1297,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React24 = require_react(), Internals = {
+        var React26 = require_react(), Internals = {
           d: {
             f: noop,
             r: function() {
@@ -1315,7 +1315,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React24.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React26.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -2857,7 +2857,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React24.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React26.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16439,14 +16439,14 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React24 = require_react(), ReactDOM2 = require_react_dom(), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React26 = require_react(), ReactDOM2 = require_react_dom(), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         var REACT_ACTIVITY_TYPE = Symbol.for("react.activity");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
         var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel");
         Symbol.for("react.view_transition");
-        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, ReactSharedInternals = React24.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM2.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, NotPending = Object.freeze({
+        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, ReactSharedInternals = React26.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM2.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, NotPending = Object.freeze({
           pending: false,
           data: null,
           method: null,
@@ -18713,9 +18713,9 @@
             }
           }
         }, callDestroyInDEV = callDestroy["react-stack-bottom-frame"].bind(callDestroy), callLazyInit = {
-          "react-stack-bottom-frame": function(lazy2) {
-            var init = lazy2._init;
-            return init(lazy2._payload);
+          "react-stack-bottom-frame": function(lazy) {
+            var init = lazy._init;
+            return init(lazy._payload);
           }
         }, callLazyInitInDEV = callLazyInit["react-stack-bottom-frame"].bind(callLazyInit), thenableState = null, thenableIndexCounter = 0, currentDebugInfo = null, didWarnAboutMaps;
         var didWarnAboutGenerators = didWarnAboutMaps = false;
@@ -19160,7 +19160,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React24.version;
+          var isomorphicReactPackageVersion = React26.version;
           if ("19.1.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.1.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -19672,20 +19672,20 @@
         function validateChildKeys(node) {
           "object" === typeof node && null !== node && node.$$typeof === REACT_ELEMENT_TYPE && node._store && (node._store.validated = 1);
         }
-        var React24 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var React26 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
         Symbol.for("react.provider");
-        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React24.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React26.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
           return null;
         };
-        React24 = {
+        React26 = {
           "react-stack-bottom-frame": function(callStackForError) {
             return callStackForError();
           }
         };
         var specialPropKeyWarningShown;
         var didWarnAboutElementRef = {};
-        var unknownOwnerDebugStack = React24["react-stack-bottom-frame"].bind(
-          React24,
+        var unknownOwnerDebugStack = React26["react-stack-bottom-frame"].bind(
+          React26,
           UnknownOwner
         )();
         var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
@@ -19734,11 +19734,11 @@
   });
 
   // ../Portfolio/src/index.js
-  var import_react11 = __toESM(require_react(), 1);
+  var import_react13 = __toESM(require_react(), 1);
   var import_client = __toESM(require_client(), 1);
 
   // ../Portfolio/src/template.jsx
-  var import_react10 = __toESM(require_react(), 1);
+  var import_react12 = __toESM(require_react(), 1);
 
   // ../Portfolio/node_modules/react-router/dist/development/chunk-QMGIS6GS.mjs
   var React3 = __toESM(require_react(), 1);
@@ -22238,7 +22238,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var import_react3 = __toESM(require_react(), 1);
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
   function About() {
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "about-markdown", dangerouslySetInnerHTML: { __html: '<p>Currently seeking full-stack/frontend development internship opportunities in the Toronto area!</p>\n<p>Experienced in frontend/full-stack development for several years, proficient in large-scale frontend project development, participated in the development of the ticketing system for the Beijing Winter Olympics.</p>\n<p>Experienced in developing complex distributed backend services, developed an automated console review platform for over 100 products at Alibaba Cloud.</p>\n<p>Currently pursuing graduate studies at Lakehead University. Dedicated to learning AI, with a focus on practical application and a passion for creating valuable solutions.</p>\n<ul>\n<li>\u{1F4BC} I used to work in Alibaba. Currently I&#39;m studying in lakehead university in Canada. Click Here to get my resume.</li>\n<li>\u{1F914} I am a full-stack development engineer.</li>\n<li>\u{1F4EB} If you are interested in me, contact me via this email: <a href="mailto:taobowen19990315@gmail.com">taobowen19990315@gmail.com</a></li>\n<li>\u{1F604} Hobby: \u{1F3C2} \u{1F3CA} \u{1F3D6}\uFE0F \u{1F3B7} \u26FA\uFE0F</li>\n</ul>\n' } });
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "about-markdown", dangerouslySetInnerHTML: { __html: '<p>Currently seeking full-stack development work opportunities in the Toronto area!</p>\n<p>Experienced in full-stack development for several years, proficient in large-scale frontend project development, participated in the development of the ticketing system for the Beijing Winter Olympics.</p>\n<p>Experienced in developing complex distributed backend services, developed an automated console review platform for over 100 products at Alibaba Cloud.</p>\n<p>Just graduated from Lakehead University. Learning AI, with a focus on practical application and a passion for creating valuable solutions.</p>\n<ul>\n<li>\u{1F4BC} I used to work in Alibaba. Currently I am living in Canada.</li>\n<li>\u{1F914} I am a full-stack development engineer.</li>\n<li>\u{1F4EB} If you are interested in me, contact me via this email: <a href="mailto:taobowen19990315@gmail.com">taobowen19990315@gmail.com</a></li>\n<li>\u{1F604} Hobby: \u{1F3C2} \u{1F3CA} \u{1F3D6}\uFE0F \u{1F3B7} \u26FA\uFE0F</li>\n</ul>\n' } });
   }
 
   // ../Portfolio/src/layout.jsx
@@ -22929,66 +22929,95 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var import_react7 = __toESM(require_react(), 1);
   var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
   function IOCPageInspector() {
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>IOC Page Inspector</h1><h2 style="color: #4a4a4a; font-weight: normal;">IOC Page Inspector: From Live Monitoring to Offline Playback.</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>IOC</h1>\n<blockquote>\n<p>test jsdfioajoiefjiosajiogjioesajnglijreiosafjoi jfiodsajiogjioejsaoigjoeia jfieojsaiogjeoisajgiojeosiagj</p>\n</blockquote>\n<blockquote>\n<p>hfuioejaiojgioerjsaiogjoiejsraogi\nnjfioernjsaiognioejgaoijeog\nhgueirjwaiojgfoiejsafio</p>\n</blockquote>\n<p><img src="/assets/IOC-Page-Inspector/copy.png" alt="Alt text" class="mark-img" /></p>\n</div>' } });
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>IOC Page Inspector</h1><h2 style="color: #4a4a4a; font-weight: normal;">Page Resource Capture Plugin & Winter Olympics Demo Client</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>\n<blockquote>\n<p>After the Winter Olympics, the organizing committee was very satisfied with the ticketing system we\u2019d built and asked for a lightweight demo they could use for ongoing presentations and analysis. Maintaining a live, full-stack environment just for demos would have been costly and brittle, so we created two components:</p>\n<ul>\n<li>a Chrome extension that snapshots product pages and their network activity, and</li>\n<li>an Electron demo client that replays those snapshots offline.</li>\n</ul>\n</blockquote>\n<p><img src="/assets/IOC-Page-Inspector/about.png" alt="About" class="mark-img" /></p>\n<h1>Idea</h1>\n<blockquote>\n<p>Build a capture-and-replay pipeline:</p>\n<p>The Chrome extension listens to <strong>fetch/XHR</strong> requests and key UI events (click/move), intercepts responses, and packages the static assets by <strong>API path</strong>.</p>\n<p>The captured bundles are persisted to an object storage service (<strong>OSS</strong>) with simple metadata that maps each business scenario to the exact front-end state and backend responses.</p>\n<p>The Electron client acts as the demo platform: it offers an OSS sync interface and loads assets on demand, so product flows can be demonstrated without any live servers.</p>\n</blockquote>\n<p><img src="/assets/IOC-Page-Inspector/design.png" alt="Design" class="mark-img" /></p>\n<h1>Feature &amp; Advantage</h1>\n<blockquote>\n<p><strong>Cost &amp; simplicity:</strong> No need to keep staging/prod mirrors alive for demos.</p>\n<p><strong>Reliability:</strong> Deterministic demos that don\u2019t break due to backend changes or network issues.</p>\n<p><strong>Portability:</strong> Works in venues with poor or restricted internet; everything runs <strong>locally</strong>.</p>\n<p><strong>Fidelity:</strong> Captures real UI/UX and real API responses, preserving look, feel, and data shape.</p>\n</blockquote>\n<h1>Release</h1>\n<blockquote>\n<p>This is an internal project from my previous employer, so I cannot share proprietary screenshots. In short, the <strong>plugin + client</strong> turned a high-maintenance ticketing system into a <strong>serverless, offline, demo-ready</strong> application, making ongoing presentations <strong>low-cost, stable, and easy to operate</strong>.</p>\n</blockquote>\n</div>' } });
   }
 
   // ../Portfolio/src/pages/MarkdownPortfolioGenerator.js
   var import_react8 = __toESM(require_react(), 1);
   var import_jsx_runtime5 = __toESM(require_jsx_runtime(), 1);
   function MarkdownPortfolioGenerator() {
-    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>Markdown Portfolio Generator</h1><h2 style="color: #4a4a4a; font-weight: normal;">Elegant Developer Portfolio Builder from Markdown Files.</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>Elegant</h1>\n</div>' } });
+    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>Portfolio Auto-Generator</h1><h2 style="color: #4a4a4a; font-weight: normal;">Elegant Developer Portfolio Builder from Markdown Files.</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>\n<blockquote>\n<p>A minimalist, project-first portfolio generator built with <strong>Node.js</strong>. It produces a responsive site that looks great on desktop, tablet, and mobile and keeps your content in simple <strong>Markdown</strong>.</p>\n<p>Scaffold an initial portfolio folder in one command.</p>\n<p>Write projects as *.md files; include a lightweight about.md for a short intro.</p>\n<p>Preview locally with a dev server; build for production with a single command.</p>\n<p>Designed to publish directly to GitHub Pages (username.github.io) for quick updates and previews.</p>\n</blockquote>\n<p><img src="/assets/Markdown-Portfolio-Generator/about1.png" alt="About" class="mark-img" />\n<img src="/assets/Markdown-Portfolio-Generator/about2.png" alt="About" class="mark-img" /></p>\n<h1>Why do this</h1>\n<blockquote>\n<p>Most portfolio tools ship bloated templates\u2014long background stories, full resumes, awards grids\u2014making the site look \u201Cfull\u201D while burying the actual projects. This tool takes the opposite approach:</p>\n<p>Hard-core, project-centric layout that surfaces problem \u2192 solution \u2192 impact.</p>\n<p>No duplicate resume fluff (that already lives in your CV/LinkedIn).</p>\n<p>Faster to author and maintain; visitors immediately see your technical depth and build details.</p>\n</blockquote>\n<h1>Release</h1>\n<blockquote>\n<p>Click <a href="https://github.com/taobowen/Portfolio">here</a> for Source code and usage guide</p>\n</blockquote>\n</div>' } });
   }
 
   // ../Portfolio/src/pages/UIValidationToolkit.js
   var import_react9 = __toESM(require_react(), 1);
   var import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1);
   function UIValidationToolkit() {
-    return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>UI Validation Toolkit</h1><h2 style="color: #4a4a4a; font-weight: normal;">Efficient UI Validation Toolkit for Designers and Developers</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>Efficient</h1>\n</div>' } });
+    return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>Experience Insight Platform</h1><h2 style="color: #4a4a4a; font-weight: normal;">Efficient UI Validation Toolkit for Designers and Developers</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>\n<blockquote>\n<p>An internal platform that continuously evaluates usability and experience consistency across 100+ products and 1,000+ pages of our private-cloud management suite. It provides designers and developers with automated performance checks, network/API verification, design-spec compliance audits, and front-end component coverage reports\u2014plus consolidated dashboards and exportable analyses.</p>\n</blockquote>\n<p><img src="/assets/UI-Validation-Toolkit/about.png" alt="About" class="mark-img" /></p>\n<h1>Why do this</h1>\n<blockquote>\n<p>Manual walkthroughs were time-consuming and error-prone, tying up engineers and designers and still missing regressions. We needed a repeatable, accurate, low-touch way to audit large UI surfaces on a regular cadence.</p>\n</blockquote>\n<h1>Design</h1>\n<blockquote>\n<p>Automation engine (Node.js + Puppeteer). For each inspection item, the backend runs targeted scripts that set environment variables, mock or seed data as needed, and simulate user interactions (click, move, input) to exercise real screens and API flows.</p>\n<p>Distributed scheduler (MetaQ message queue). With only 4 VMs, a queue-driven scheduler maximizes utilization and load-balances jobs. Result: ~150% faster end-to-end runs\u20141,000+ pages: 20h \u2192 8h per batch.</p>\n<p>Resource efficiency &amp; balancing.</p>\n<p>Per-node: max CPU \u2193 ~10%, min CPU \u2191 ~50%; memory max/min both improved slightly (within \xB15%).</p>\n<p>Cluster: CPU utilization \u2191 ~20%, with near-uniform CPU/memory across nodes\u2014effectively filling valleys and shaving peaks.</p>\n<p>Operations &amp; observability. Master\u2013subtask job model with real-time status, progress, and logs. Supports scheduled runs and per-task rule configuration.</p>\n<p>Notifications &amp; self-serve. Integrated DingTalk Open API for subscription-based alerts on state changes, enabling non-engineers to launch and monitor audits via a \u201Cwhite-screen\u201D (no-code) UI.</p>\n</blockquote>\n<p>(placeholder for image)</p>\n<h1>Release</h1>\n<blockquote>\n<p>Sadly, This is an internal, employee-only system accessible on the company network, I can not give you the website url. To respect security policy, public materials use redrawn mockups based on the real UI rather than direct screenshots.</p>\n</blockquote>\n</div>' } });
+  }
+
+  // ../Portfolio/src/pages/Guidex.js
+  var import_react10 = __toESM(require_react(), 1);
+  var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+  function Guidex() {
+    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>Guidex</h1><h2 style="color: #4a4a4a; font-weight: normal;">AI Skiing Coach</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>\n<blockquote>\n<p>An end-to-end coaching system that analyzes user-uploaded skiing videos and returns actionable, personalized feedback. The platform combines computer vision for pose tracking, Transformers for technique classification, and an LLM with RAG for natural-language guidance. Frontends are built with React/React Native; services run on a Java backend with training on Amazon SageMaker and data stored in MySQL plus a Vector DB for retrieval.</p>\n</blockquote>\n<p><img src="/assets/guidex/about1.png" alt="About" class="mark-img" />\n<img src="/assets/guidex/about2.png" alt="About" class="mark-img" /></p>\n<h1>Why do this</h1>\n<blockquote>\n<p>Access &amp; cost: Quality coaching is scarce and expensive; video-based AI lowers the barrier.</p>\n<p>Objective feedback: Frame-level pose signals and error classifiers beat subjective memory from the slope.</p>\n<p>Scalability: Once trained, the system reviews unlimited sessions with consistent standards.</p>\n<p>Personalization: RAG + LLM turns detected mistakes into skier-specific tips instead of generic checklists.</p>\n</blockquote>\n<h1>Tech Detail</h1>\n<blockquote>\n<p>High-level flow:\nUser video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction \u2192 Performance Analysis \u2192 LLM (RAG) Feedback \u2192 Results</p>\n<h2>Pose Estimation &amp; Motion Tracking</h2>\n<p><strong>Tech</strong>: AlphaPose.</p>\n<p><strong>Method</strong>: Detect shoulder/hip/knee/ankle keypoints, track motion, compute joint angles and stance metrics.</p>\n<p><strong>Output</strong>: Time-series keypoint tensor + derived biomechanics features.</p>\n<h2>Data Annotation &amp; Model Training</h2>\n<p><strong>Labels</strong>: Instructor-curated tags (e.g., carving posture, weight shift) + rule-based auto-labels (e.g., knee angle &lt; 90\xB0 \u2192 \u201Cinsufficient knee bend\u201D) with semi-supervised expansion.</p>\n<p><strong>Model</strong>: Transformer classifier trained on pose sequences (SageMaker jobs + checkpoints).</p>\n<p><strong>Goal</strong>: Detect common issues such as leaning back, late edge change, knees too straight.</p>\n<h2>Performance Analysis</h2>\n<p><strong>MVP</strong>: Threshold rules compare user features to pro baselines (fast, explainable).</p>\n<p><strong>Advanced</strong>: Multi-label Transformer outputs per-frame/per-turn error probabilities and aggregates them into session-level insights.</p>\n<h2>AI-Powered Feedback Generation (RAG)</h2>\n<p><strong>Knowledge base</strong>: Technique guides, drills, and safety notes embedded into a Vector DB.</p>\n<p><strong>RAG steps</strong>:</p>\n<ul>\n<li><p>Map detected errors to intent queries.</p>\n</li>\n<li><p>Retrieve the most relevant coaching snippets.</p>\n</li>\n<li><p>LLM composes step-by-step advice, cues, and at-home drills tailored to the skier\u2019s pattern.</p>\n</li>\n</ul>\n<p><strong>Result</strong>: Clear instructions like \u201CKeep shins pressed to the tongue of the boot; target ~110\xB0 knee flexion entering the fall line.\u201D</p>\n</blockquote>\n<h1>More Screenshot</h1>\n<p><img src="/assets/guidex/screenshot.png" alt="Screenshot" class="mark-img" /></p>\n<h1>Release</h1>\n<blockquote>\n<p>Code &amp; docs (placeholder): GitHub Repository</p>\n</blockquote>\n</div>' } });
+  }
+
+  // ../Portfolio/src/pages/Guidexpect.js
+  var import_react11 = __toESM(require_react(), 1);
+  var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+  function Guidexpect() {
+    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { dangerouslySetInnerHTML: { __html: '<div style="padding: 9rem 4.5rem;"><h1>Guidexpect</h1><h2 style="color: #4a4a4a; font-weight: normal;">Find your lovely skiing students here.</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>Guidexpect</h1>\n</div>' } });
   }
 
   // ../Portfolio/src/pageMap.js
   var pageMap = {
     "/IOCPageInspector": IOCPageInspector,
     "/MarkdownPortfolioGenerator": MarkdownPortfolioGenerator,
-    "/UIValidationToolkit": UIValidationToolkit
+    "/UIValidationToolkit": UIValidationToolkit,
+    "/Guidex": Guidex,
+    "/Guidexpect": Guidexpect
   };
   var pageMap_default = pageMap;
 
   // ../Portfolio/src/template.jsx
-  var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+  var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
   function App() {
-    const [rawList, setRawList] = (0, import_react10.useState)([]);
-    const [filterCategory, setFilterCategory] = (0, import_react10.useState)("All");
-    const [sortOrder, setSortOrder] = (0, import_react10.useState)("Created");
-    const [columns, setColumns] = (0, import_react10.useState)(1);
-    (0, import_react10.useEffect)(() => {
+    const [rawList, setRawList] = (0, import_react12.useState)([]);
+    const [filterCategory, setFilterCategory] = (0, import_react12.useState)("All");
+    const [sortOrder, setSortOrder] = (0, import_react12.useState)("Created");
+    const [columns, setColumns] = (0, import_react12.useState)(1);
+    (0, import_react12.useEffect)(() => {
       fetch("./rawList.json").then((res) => res.json()).then(setRawList).catch((err) => console.error("Failed to load project list", err));
     }, []);
-    (0, import_react10.useEffect)(() => {
+    const visibleList = (0, import_react12.useMemo)(() => {
+      const filtered = filterCategory === "All" ? rawList : rawList.filter((p3) => p3.category === filterCategory);
+      const sorted = [...filtered].sort((a3, b2) => {
+        const da = sortOrder === "Created" ? a3.created : a3.updated;
+        const db = sortOrder === "Created" ? b2.created : b2.updated;
+        return new Date(db) - new Date(da);
+      });
+      return sorted;
+    }, [rawList, filterCategory, sortOrder]);
+    const chunkProjects = (projects, cols) => {
+      const rows = [];
+      for (let i3 = 0; i3 < projects.length; i3 += cols) {
+        rows.push(projects.slice(i3, i3 + cols));
+      }
+      return rows;
+    };
+    const chunked = (0, import_react12.useMemo)(() => chunkProjects(visibleList, columns), [visibleList, columns]);
+    (0, import_react12.useEffect)(() => {
       const updateLayout = () => {
         const width = window.innerWidth;
-        if (width >= 1360) setColumns(3);
-        else if (width >= 680) setColumns(2);
-        else setColumns(1);
+        const count = visibleList.length;
+        if (width >= 1360) {
+          setColumns(count >= 9 ? 3 : 2);
+        } else if (width >= 680) {
+          setColumns(2);
+        } else {
+          setColumns(1);
+        }
       };
       updateLayout();
       window.addEventListener("resize", updateLayout);
       return () => window.removeEventListener("resize", updateLayout);
-    }, []);
-    const chunkProjects = (projects, columns2) => {
-      const rows = [];
-      for (let i3 = 0; i3 < projects.length; i3 += columns2) {
-        rows.push(projects.slice(i3, i3 + columns2));
-      }
-      return rows;
-    };
-    const chunked = chunkProjects(rawList, columns);
-    const flipKey = `${filterCategory}-${sortOrder}-${columns}`;
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(HashRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_react10.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: "Loading..." }), children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Routes, { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(
+    }, [visibleList.length]);
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(HashRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_react12.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { children: "Loading..." }), children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Routes, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
       Route,
       {
         path: "/",
-        element: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
           Layout,
           {
             rawList,
@@ -22999,32 +23028,24 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           }
         ),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             Route,
             {
               index: true,
-              element: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(h2, { flipKey, children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "project-list", children: chunked.map((row, rowIndex) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "project-row", children: row.filter(
-                (project) => filterCategory === "All" || project.category === filterCategory
-              ).sort((a3, b2) => {
-                if (sortOrder === "Created") {
-                  return new Date(b2.created) - new Date(a3.created);
-                } else {
-                  return new Date(b2.updated) - new Date(a3.updated);
-                }
-              }).map((project) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(v2, { flipId: project.path, id: project.path, children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ProjectCard, { project }) }, project.path)) }, rowIndex)) }) })
+              element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(h2, { flipKey: `${columns}-${filterCategory}-${sortOrder}-${visibleList.length}`, children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "project-list", children: chunked.map((row, rowIndex) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "project-row", children: row.map((project) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(v2, { flipId: project.path, children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "card-wrap", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(ProjectCard, { project }) }) }, project.path)) }, `row-${columns}-${rowIndex}`)) }) })
             }
           ),
-          Object.entries(pageMap_default).map(([path, Comp]) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Route, { path, element: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Comp, {}) }, path))
+          Object.entries(pageMap_default).map(([path, Comp]) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Route, { path, element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Comp, {}) }, path))
         ]
       }
     ) }) }) });
   }
 
   // ../Portfolio/src/index.js
-  var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+  var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
   var root = import_client.default.createRoot(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(App, {})
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(App, {})
   );
 })();
 /*! Bundled license information:

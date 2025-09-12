@@ -3,7 +3,7 @@
     "path": "/IOCPageInspector",
     "coverUrl": "./covers/IOCPageInspector.png",
     "title": "IOC Page Inspector",
-    "description": "IOC Page Inspector: From Live Monitoring to Offline Playback.",
+    "description": "Page Resource Capture Plugin & Winter Olympics Demo Client",
     "category": "General",
     "createDate": "2025-07-18",
     "updateDate": "2025-07-18"
@@ -11,7 +11,7 @@
   {
     "path": "/MarkdownPortfolioGenerator",
     "coverUrl": "./covers/MarkdownPortfolioGenerator.png",
-    "title": "Markdown Portfolio Generator",
+    "title": "Portfolio Auto-Generator",
     "description": "Elegant Developer Portfolio Builder from Markdown Files.",
     "category": "General",
     "createDate": "2025-07-18",
@@ -20,10 +20,28 @@
   {
     "path": "/UIValidationToolkit",
     "coverUrl": "./covers/UIValidationToolkit.png",
-    "title": "UI Validation Toolkit",
+    "title": "Experience Insight Platform",
     "description": "Efficient UI Validation Toolkit for Designers and Developers",
     "category": "General",
     "createDate": "2025-07-18",
     "updateDate": "2025-07-18"
+  },
+  {
+    "path": "/Guidex",
+    "coverUrl": "./covers/Guidex.png",
+    "title": "Guidex",
+    "description": "AI Skiing Coach",
+    "category": "General",
+    "createDate": "2025-09-11",
+    "updateDate": "2025-09-11"
+  },
+  {
+    "path": "/Guidexpect",
+    "coverUrl": "./covers/Guidexpect.png",
+    "title": "Guidexpect",
+    "description": "Find your lovely skiing students here.",
+    "category": "General",
+    "createDate": "2025-09-11",
+    "updateDate": "2025-09-11"
   }
 ]
