@@ -13,16 +13,6 @@ updateDate: 2025-09-11
 ![About](./about1.png)
 ![About](./about2.png)
 
-# Why do this
-
-> Access & cost: Quality coaching is scarce and expensive; video-based AI lowers the barrier.
->
-> Objective feedback: Frame-level pose signals and error classifiers beat subjective memory from the slope.
->
-> Scalability: Once trained, the system reviews unlimited sessions with consistent standards.
->
-> Personalization: RAG + LLM turns detected mistakes into skier-specific tips instead of generic checklists.
-
 # Tech Detail
 
 > High-level flow:
@@ -67,10 +57,6 @@ updateDate: 2025-09-11
 > - LLM composes step-by-step advice, cues, and at-home drills tailored to the skier’s pattern.
 >
 > **Result**: Clear instructions like “Keep shins pressed to the tongue of the boot; target ~110° knee flexion entering the fall line.”
-
-# More Screenshot
-
-![Screenshot](./screenshot.png)
 
 # Release
 

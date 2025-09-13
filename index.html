@@ -5,9 +5,27 @@
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./index.css" />
-<link rel="icon" href="favicon.ico"></head>
+<link rel="icon" href="favicon.ico"><script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18",
+    "react-dom": "https://esm.sh/react-dom@18",
+    "react-dom/client": "https://esm.sh/react-dom@18/client"
+  }
+}
+</script>
+</head>
 <body>
   <div id="root"></div>
     <script src="./index.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  for(const img of document.querySelectorAll('img')){
+    if(!img.hasAttribute('loading')) img.setAttribute('loading','lazy');
+    if(!img.hasAttribute('decoding')) img.setAttribute('decoding','async');
+    if(!img.hasAttribute('fetchpriority')) img.setAttribute('fetchpriority','low');
+  }
+});
+</script>
 </body>
 </html>
