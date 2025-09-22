@@ -21,6 +21,9 @@ updateDate: 2025-07-18
 > Automation engine (Node.js + Puppeteer). For each inspection item, the backend runs targeted scripts that set environment variables, mock or seed data as needed, and simulate user interactions (click, move, input) to exercise real screens and API flows.
 >
 > Distributed scheduler (MetaQ message queue). With only 4 VMs, a queue-driven scheduler maximizes utilization and load-balances jobs. Result: ~150% faster end-to-end runs—1,000+ pages: 20h → 8h per batch.
+
+![Design](./design.png)
+
 >
 > Resource efficiency & balancing.
 >
@@ -32,7 +35,15 @@ updateDate: 2025-07-18
 >
 > Notifications & self-serve. Integrated DingTalk Open API for subscription-based alerts on state changes, enabling non-engineers to launch and monitor audits via a “white-screen” (no-code) UI.
 
-(placeholder for image)
+![About1](./about1.png)
+
+![About2](./about2.png)
+
+![About3](./about3.png)
+
+![About4](./about4.png)
+
+![About5](./about5.png)
 
 # Release
 

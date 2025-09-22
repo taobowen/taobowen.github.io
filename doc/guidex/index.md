@@ -60,4 +60,4 @@ updateDate: 2025-09-11
 
 # Release
 
-> Code & docs (placeholder): GitHub Repository
+[Github respository](https://github.com/taobowen/Guidex_FEClick) · [Get APP](https://testflight.apple.com/join/kfbHgZCU)

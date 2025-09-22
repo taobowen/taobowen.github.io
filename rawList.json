@@ -43,5 +43,14 @@
     "category": "General",
     "createDate": "2025-09-11",
     "updateDate": "2025-09-11"
+  },
+  {
+    "path": "/InterviewTracker",
+    "coverUrl": "./covers/InterviewTracker.png",
+    "title": "Interview Tracker",
+    "description": "Personal Interview Progress Platform",
+    "category": "General",
+    "createDate": "2025-09-22",
+    "updateDate": "2025-09-22"
   }
 ]

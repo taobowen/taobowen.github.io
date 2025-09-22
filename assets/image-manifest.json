@@ -9,7 +9,7 @@
     "sizes": "(max-width: 640px) 100vw, 640px"
   },
   "covers/Guidexpect.png": {
-    "placeholder": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBQCdASoYABIAPwF2s1OrJySiqAgBYCAJZwC/OA92fMuqS0DbOSOANoQMxKvBiMlgAP7UNGyrYdQMxobCth1lidRE8YOjc1Lb0VSF5js58FRG8vpNgGym6KpfTif+LFHKVjrjdNWhoBdrgz+aB1tu4eGyoUJf6ZUP4ixZiP6l4Jy+aPgTfpEikOdS1wbYwaveOtmx7y+RmAAA",
+    "placeholder": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBQCdASoYABgAPwFurk8rJqQiMAgBYCAJYwC2yYzQ5NrcIKTGn0OrCXJtdxNFp0fXnAAA/pADt5BizrGYEgX8Qy1WTN12pIqJHcNUFN8dKMK9pfxRLjgW+getd5R+GbVyUXlmFZI2XP7h4o4XieoC744hsTcF3lubKDg1PQneTiTX1hQz+iKtNgpvqSxSY4bPpiz77HGYDHmGF3z2IbPVEW+/sdEVEVqEj5/AAAA=",
     "srcset": {
       "webp": "assets/covers/Guidexpect-320.webp 320w, assets/covers/Guidexpect-640.webp 640w, assets/covers/Guidexpect-960.webp 960w, assets/covers/Guidexpect-1280.webp 1280w",
       "jpg": "assets/covers/Guidexpect-320.jpg 320w, assets/covers/Guidexpect-640.jpg 640w, assets/covers/Guidexpect-960.jpg 960w, assets/covers/Guidexpect-1280.jpg 1280w"
@@ -26,6 +26,15 @@
     "fallback": "assets/covers/IOCPageInspector-960.webp",
     "sizes": "(max-width: 640px) 100vw, 640px"
   },
+  "covers/InterviewTracker.png": {
+    "placeholder": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADQBACdASoYABIAPwFurlCrJiQisBgIAWAgCWcAuwARAQvERNeYUTqyiHhj/0F1wAD+6eL0xJ3T7e5Gl2EpmS1A5I+JX27uOdY17YCwe1kVF3rh2RwfiVKUJ8rpnDueIf3oR3b7eYGvxSqzsj2fbgwJ9rsF1Xs8FL3E3PbWXEjdLZbmJLoUpQ9JxQgSykXG1SckBulwDss1ZX1weAA=",
+    "srcset": {
+      "webp": "assets/covers/InterviewTracker-320.webp 320w, assets/covers/InterviewTracker-640.webp 640w, assets/covers/InterviewTracker-960.webp 960w, assets/covers/InterviewTracker-1280.webp 1280w",
+      "jpg": "assets/covers/InterviewTracker-320.jpg 320w, assets/covers/InterviewTracker-640.jpg 640w, assets/covers/InterviewTracker-960.jpg 960w, assets/covers/InterviewTracker-1280.jpg 1280w"
+    },
+    "fallback": "assets/covers/InterviewTracker-1280.webp",
+    "sizes": "(max-width: 640px) 100vw, 640px"
+  },
   "covers/MarkdownPortfolioGenerator.png": {
     "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQBACdASoYABUAPvFgrE6ppaSiMAwBMB4JbADGroR8eGsJ5aJAZP7JBK2SfnTrwADI55fgKJ/GqM4IUOJvkUOA2bTL21UYyj4SjzM9dOZz7UaOUtx9sKQgC2ilVMhR5rXPUiDdPIHBP2CMGuCCdYf4eIqdYFF0GtWp7yJmjDC2PibZKF67rNAA",
     "srcset": {
@@ -36,7 +45,7 @@
     "sizes": "(max-width: 640px) 100vw, 640px"
   },
   "covers/UIValidationToolkit.png": {
-    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAwCdASoYABAAPwFqrU8rJiQiMAgBYCAJZQAAUctArh+pDgAA/q0mZ3h0nIzi+DVcKQwIYxr6TgXeZQmA57xdnM8RTUwZvMHDxZ5l/TMnUheG3jzrMPXoIl8AAA==",
+    "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwAwCdASoYABIAPwFsrE8rJiQjMAgBYCAJaQAAVFu83p79H7AArsiACQiGeOGJNuStyO8j/gaC2NZSZU0q98PspjJEPQ6oMXRRhVmk+lZ4nbYgAAA=",
     "srcset": {
       "webp": "assets/covers/UIValidationToolkit-320.webp 320w, assets/covers/UIValidationToolkit-640.webp 640w, assets/covers/UIValidationToolkit-960.webp 960w, assets/covers/UIValidationToolkit-1280.webp 1280w",
       "jpg": "assets/covers/UIValidationToolkit-320.jpg 320w, assets/covers/UIValidationToolkit-640.jpg 640w, assets/covers/UIValidationToolkit-960.jpg 960w, assets/covers/UIValidationToolkit-1280.jpg 1280w"
