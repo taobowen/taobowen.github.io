@@ -126,7 +126,35 @@ User video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction
 </blockquote>
 <h1>Release</h1>
 <p><a href="https://github.com/taobowen/Guidex_FEClick">Github respository</a> \xB7 <a href="https://testflight.apple.com/join/kfbHgZCU">Get APP</a></p>
-</div>`}})}import"react";import{jsx as Co}from"react/jsx-runtime";function cr(){return Co("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>Guidexpect</h1><h2 style="color: #4a4a4a; font-weight: normal;">Find your lovely skiing students here.</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>Guidexpect</h1>
+</div>`}})}import"react";import{jsx as Co}from"react/jsx-runtime";function cr(){return Co("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>GUIDEXPERT</h1><h2 style="color: #4a4a4a; font-weight: normal;">An Online ski coach application</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h3><strong>Background</strong></h3>
+<blockquote>
+<p>Many certified coaches face challenges such as limited customer acquisition channels, lack of self-promotion, or inability to work full-time at ski resorts, which often leads to insufficient students and unstable income. In off-seasons or downtime, coaches seek online teaching models to supplement their schedules and increase revenue. Meanwhile, learners still struggle with the high cost, long booking cycles, and lack of real-time feedback in traditional coaching.</p>
+</blockquote>
+<h1><strong>Why do this</strong></h1>
+<blockquote>
+<p>As both a skiing enthusiast and product manager, I identified the dual-sided pain points: learners need more immediate and affordable guidance, while coaches require a more stable and scalable income stream. <br><br>To address this, I designed an AI + human hybrid coaching platform that offers membership-based access to certified coaches for learners, and provides coaches with a simple, actionable tool to deliver online lessons, showcase certifications, and monetize their expertise. This creates a sustainable two-sided value network connecting coaches and learners.</p>
+</blockquote>
+<p><img src="/assets/guidexpect/challenge.png" alt="challenge" class="mark-img" />
+<img src="/assets/guidexpect/solution.png" alt="solution" class="mark-img" /></p>
+<h1><strong>Actions</strong></h1>
+<blockquote>
+<ol>
+<li><strong>User research with certified coaches</strong> Conducted in-depth interviews with professional ski/snowboard coaches to identify unmet needs such as unstable scheduling, lack of consistent student flow, and limited income opportunities during off-season.<br><br></li>
+<li><strong>Defined product vision and roadmap</strong> Authored the PRD and scoped MVP features tailored for coaches, including qualification verification, student feedback system, and flexible scheduling tools to expand teaching opportunities.<br><br></li>
+<li><strong>Bridged product and engineering</strong> Translated coach-side business requirements (lesson scheduling, student management, income tracking) into AI product features, driving implementation with the engineering team and increasing business value in the market.<br><br></li>
+<li><strong>Testing and iteration</strong>  Oversaw beta testing with early coaches, gathered feedback on usability, refined platform features, and optimized model precision to improve adoption and monetization potential for coaches.<br><br></li>
+</ol>
+</blockquote>
+<p><img src="/assets/guidexpect/action.png" alt="action" class="mark-img" /></p>
+<h3><strong>Results</strong></h3>
+<blockquote>
+<ul>
+<li>Validated scalability of the model, with early beta coaches reporting higher student acquisition rates and incremental income (1200 CAD/month) opportunities during off-peak periods.<br><br></li>
+<li>Enabled new income channels for coaches by launching the first AI + human hybrid virtual coaching platform, allowing certified coaches to monetize flexible online sessions beyond seasonal or location limits.<br><br></li>
+<li>Stabilized coach scheduling and student flow, reducing idle time and increasing coach utilization through membership-based matching and flexible booking tools.<br><br></li>
+<li>Improved coach\u2013student interaction quality with integrated feedback and rating system, enhancing trust, visibility, and long-term retention for both sides.</li>
+</ul>
+</blockquote>
 </div>`}})}import"react";import{jsx as Eo}from"react/jsx-runtime";function dr(){return Eo("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>Interview Tracker</h1><h2 style="color: #4a4a4a; font-weight: normal;">Personal Interview Progress Platform</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>Interview Tracker \u2014 Personal Interview Progress Platform</h1>
 <p>A focused web app that helps job\u2011seekers <strong>track applications, visualize progress, and stay organized</strong>. Built with <strong>Next.js (App Router)</strong>, <strong>Tailwind</strong>, <strong>Firebase Auth</strong>, and <strong>Firestore</strong>; charts rendered with <strong>Recharts</strong>.</p>
 <h2>Why I built it</h2>
