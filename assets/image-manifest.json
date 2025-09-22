@@ -18,12 +18,12 @@
     "sizes": "(max-width: 640px) 100vw, 640px"
   },
   "covers/IOCPageInspector.png": {
-    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYABMAPwF4tFOrJyUkKAgBYCAJYwCo9BI2XS5tlzuukxujAAD+44KuFwOPaJ/B4uYVQCpSqKKM4+V4vJdwGHxVaz+Ac40Zxn4Pah6Ul4tU/ExUAhxtO/1SnkhAAA==",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPwFqrE8rJiQiMAgBYCAJQBOmUABfgOwErULree8AAP7uoHECiZFA1MogYJ+2bHTF5J0VYJ8S41dgRVSnLsQr/dR43Ofw8cKuGTwg11a4AAA=",
     "srcset": {
-      "webp": "assets/covers/IOCPageInspector-320.webp 320w, assets/covers/IOCPageInspector-640.webp 640w, assets/covers/IOCPageInspector-960.webp 960w",
-      "jpg": "assets/covers/IOCPageInspector-320.jpg 320w, assets/covers/IOCPageInspector-640.jpg 640w, assets/covers/IOCPageInspector-960.jpg 960w"
+      "webp": "assets/covers/IOCPageInspector-320.webp 320w, assets/covers/IOCPageInspector-640.webp 640w, assets/covers/IOCPageInspector-960.webp 960w, assets/covers/IOCPageInspector-1280.webp 1280w",
+      "jpg": "assets/covers/IOCPageInspector-320.jpg 320w, assets/covers/IOCPageInspector-640.jpg 640w, assets/covers/IOCPageInspector-960.jpg 960w, assets/covers/IOCPageInspector-1280.jpg 1280w"
     },
-    "fallback": "assets/covers/IOCPageInspector-960.webp",
+    "fallback": "assets/covers/IOCPageInspector-1280.webp",
     "sizes": "(max-width: 640px) 100vw, 640px"
   },
   "covers/InterviewTracker.png": {
