@@ -112,7 +112,9 @@ User video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction
 <p><strong>Output</strong>: Time-series keypoint tensor + derived biomechanics features.</p>
 <h2>Data Annotation &amp; Model Training</h2>
 <p><strong>Labels</strong>: Instructor-curated tags (e.g., carving posture, weight shift) + rule-based auto-labels (e.g., knee angle &lt; 90\xB0 \u2192 \u201Cinsufficient knee bend\u201D) with semi-supervised expansion.</p>
+<p><img src="/assets/guidex/data_engineering.png" alt="Data" class="mark-img" /></p>
 <p><strong>Model</strong>: Transformer classifier trained on pose sequences (SageMaker jobs + checkpoints).</p>
+<p><img src="/assets/guidex/model_integration.png" alt="Model" class="mark-img" /></p>
 <p><strong>Goal</strong>: Detect common issues such as leaning back, late edge change, knees too straight.</p>
 <h2>Performance Analysis</h2>
 <p><strong>MVP</strong>: Threshold rules compare user features to pro baselines (fast, explainable).</p>

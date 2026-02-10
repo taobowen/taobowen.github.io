@@ -36,7 +36,11 @@ updateDate: 2025-09-11
 >
 > **Labels**: Instructor-curated tags (e.g., carving posture, weight shift) + rule-based auto-labels (e.g., knee angle < 90° → “insufficient knee bend”) with semi-supervised expansion.
 >
+> ![Data](./data_engineering.png)
+>
 > **Model**: Transformer classifier trained on pose sequences (SageMaker jobs + checkpoints).
+>
+> ![Model](./model_integration.png)
 >
 > **Goal**: Detect common issues such as leaning back, late edge change, knees too straight.
 >
