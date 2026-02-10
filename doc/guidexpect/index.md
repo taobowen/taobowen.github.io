@@ -1,5 +1,5 @@
 ---
-title: GUIDEXPERT
+title: Guidex (Coach-side backend)
 description:  An Online ski coach application 
 category: General
 createDate: 2025-09-20
@@ -15,6 +15,10 @@ updateDate: 2025-09-20
 
 ![challenge](./challenge.png)
 ![solution](./solution.png)
+
+# Architecture
+
+![Architecture](./architecture.png)
 
 # **Actions**
 >1. **User research with certified coaches** Conducted in-depth interviews with professional ski/snowboard coaches to identify unmet needs such as unstable scheduling, lack of consistent student flow, and limited income opportunities during off-season.<br><br>

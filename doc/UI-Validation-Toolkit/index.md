@@ -16,7 +16,11 @@ updateDate: 2025-07-18
 
 > Manual walkthroughs were time-consuming and error-prone, tying up engineers and designers and still missing regressions. We needed a repeatable, accurate, low-touch way to audit large UI surfaces on a regular cadence.
 
-# Design
+# Architecture
+
+![Architecture](./architecture.png)
+
+# Design Detail
 
 > Automation engine (Node.js + Puppeteer). For each inspection item, the backend runs targeted scripts that set environment variables, mock or seed data as needed, and simulate user interactions (click, move, input) to exercise real screens and API flows.
 >

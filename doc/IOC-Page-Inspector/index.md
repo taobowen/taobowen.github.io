@@ -27,6 +27,12 @@ updateDate: 2025-07-18
 
 ![Design](./design.png)
 
+
+# Architecture
+
+![Architecture](./architecture.png)
+
+
 # Feature & Advantage
 
 > **Cost & simplicity:** No need to keep staging/prod mirrors alive for demos.

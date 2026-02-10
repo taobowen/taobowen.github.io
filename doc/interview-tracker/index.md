@@ -53,4 +53,4 @@ Job searches create scattered spreadsheets, sticky notes, and endless tabs. I de
 
 # Release
 
-> Click [here](https://github.com/taobowen/Interview-King) for Source code and usage guide
+> Click [here](https://interview-king.taobowen.com/) to reach the website

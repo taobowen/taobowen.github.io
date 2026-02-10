@@ -27,6 +27,8 @@ Please change the parent <Route path="${f}"> to <Route path="${f==="/"?"*":`${f}
 <p>The Electron client acts as the demo platform: it offers an OSS sync interface and loads assets on demand, so product flows can be demonstrated without any live servers.</p>
 </blockquote>
 <p><img src="/assets/IOC-Page-Inspector/design.png" alt="Design" class="mark-img" /></p>
+<h1>Architecture</h1>
+<p><img src="/assets/IOC-Page-Inspector/architecture.png" alt="Architecture" class="mark-img" /></p>
 <h1>Feature &amp; Advantage</h1>
 <blockquote>
 <p><strong>Cost &amp; simplicity:</strong> No need to keep staging/prod mirrors alive for demos.</p>
@@ -68,7 +70,9 @@ Please change the parent <Route path="${f}"> to <Route path="${f==="/"?"*":`${f}
 <blockquote>
 <p>Manual walkthroughs were time-consuming and error-prone, tying up engineers and designers and still missing regressions. We needed a repeatable, accurate, low-touch way to audit large UI surfaces on a regular cadence.</p>
 </blockquote>
-<h1>Design</h1>
+<h1>Architecture</h1>
+<p><img src="/assets/UI-Validation-Toolkit/architecture.png" alt="Architecture" class="mark-img" /></p>
+<h1>Design Detail</h1>
 <blockquote>
 <p>Automation engine (Node.js + Puppeteer). For each inspection item, the backend runs targeted scripts that set environment variables, mock or seed data as needed, and simulate user interactions (click, move, input) to exercise real screens and API flows.</p>
 <p>Distributed scheduler (MetaQ message queue). With only 4 VMs, a queue-driven scheduler maximizes utilization and load-balances jobs. Result: ~150% faster end-to-end runs\u20141,000+ pages: 20h \u2192 8h per batch.</p>
@@ -90,12 +94,14 @@ Please change the parent <Route path="${f}"> to <Route path="${f==="/"?"*":`${f}
 <blockquote>
 <p>Sadly, This is an internal, employee-only system accessible on the company network, I can not give you the website url. To respect security policy, public materials use redrawn mockups based on the real UI rather than direct screenshots.</p>
 </blockquote>
-</div>`}})}import"react";import{jsx as Lo}from"react/jsx-runtime";function sr(){return Lo("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>Guidex</h1><h2 style="color: #4a4a4a; font-weight: normal;">AI Skiing Coach</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>
+</div>`}})}import"react";import{jsx as Lo}from"react/jsx-runtime";function sr(){return Lo("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>Guidex (AI)</h1><h2 style="color: #4a4a4a; font-weight: normal;">AI Skiing Coach</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h1>About</h1>
 <blockquote>
 <p>An end-to-end coaching system that analyzes user-uploaded skiing videos and returns actionable, personalized feedback. The platform combines computer vision for pose tracking, Transformers for technique classification, and an LLM with RAG for natural-language guidance. Frontends are built with React/React Native; services run on a Java backend with training on Amazon SageMaker and data stored in MySQL plus a Vector DB for retrieval.</p>
 </blockquote>
 <p><img src="/assets/guidex/about1.png" alt="About" class="mark-img" />
 <img src="/assets/guidex/about2.png" alt="About" class="mark-img" /></p>
+<h1>Architecture</h1>
+<p><img src="/assets/guidex/architecture.png" alt="Architecture" class="mark-img" /></p>
 <h1>Tech Detail</h1>
 <blockquote>
 <p>High-level flow:
@@ -126,7 +132,7 @@ User video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction
 </blockquote>
 <h1>Release</h1>
 <p><a href="https://github.com/taobowen/Guidex_FEClick">Github respository</a> \xB7 <a href="https://testflight.apple.com/join/kfbHgZCU">Get APP</a></p>
-</div>`}})}import"react";import{jsx as Co}from"react/jsx-runtime";function cr(){return Co("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>GUIDEXPERT</h1><h2 style="color: #4a4a4a; font-weight: normal;">An Online ski coach application</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h3><strong>Background</strong></h3>
+</div>`}})}import"react";import{jsx as Co}from"react/jsx-runtime";function cr(){return Co("div",{dangerouslySetInnerHTML:{__html:`<div style="padding: 9rem 4.5rem;"><h1>Guidex (Coach-side backend)</h1><h2 style="color: #4a4a4a; font-weight: normal;">An Online ski coach application</h2></div><div style="padding: 0 4.5rem 4.5rem;"><h3><strong>Background</strong></h3>
 <blockquote>
 <p>Many certified coaches face challenges such as limited customer acquisition channels, lack of self-promotion, or inability to work full-time at ski resorts, which often leads to insufficient students and unstable income. In off-seasons or downtime, coaches seek online teaching models to supplement their schedules and increase revenue. Meanwhile, learners still struggle with the high cost, long booking cycles, and lack of real-time feedback in traditional coaching.</p>
 </blockquote>
@@ -136,6 +142,8 @@ User video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction
 </blockquote>
 <p><img src="/assets/guidexpect/challenge.png" alt="challenge" class="mark-img" />
 <img src="/assets/guidexpect/solution.png" alt="solution" class="mark-img" /></p>
+<h1>Architecture</h1>
+<p><img src="/assets/guidexpect/architecture.png" alt="Architecture" class="mark-img" /></p>
 <h1><strong>Actions</strong></h1>
 <blockquote>
 <ol>
@@ -202,6 +210,6 @@ User video \u2192 Preprocessing \u2192 Pose Estimation \u2192 Feature Extraction
 </ul>
 <h1>Release</h1>
 <blockquote>
-<p>Click <a href="https://github.com/taobowen/Interview-King">here</a> for Source code and usage guide</p>
+<p>Click <a href="https://interview-king.taobowen.com/">here</a> to reach the website</p>
 </blockquote>
 </div>`}})}var So={"/IOCPageInspector":ir,"/MarkdownPortfolioGenerator":or,"/UIValidationToolkit":lr,"/Guidex":sr,"/Guidexpect":cr,"/InterviewTracker":dr},aa=So;import{jsx as W,jsxs as Mo}from"react/jsx-runtime";function ur(){let[e,r]=ht([]),[t,n]=ht("All"),[i,a]=ht("Created"),[o,c]=ht(1);ia(()=>{fetch("./rawList.json").then(u=>u.json()).then(r).catch(u=>{})},[]);let s=oa(()=>[...t==="All"?e:e.filter(p=>p.category===t)].sort((p,g)=>{let m=i==="Created"?p.created:p.updated,v=i==="Created"?g.created:g.updated;return new Date(v)-new Date(m)}),[e,t,i]),l=(u,h)=>{let p=[];for(let g=0;g<u.length;g+=h)p.push(u.slice(g,g+h));return p},d=oa(()=>l(s,o),[s,o]);return ia(()=>{let u=()=>{let h=window.innerWidth,p=s.length;h>=1360?c(p>=9?3:2):h>=680?c(2):c(1)};return u(),window.addEventListener("resize",u),()=>window.removeEventListener("resize",u)},[s.length]),W(Bt,{children:W(Fo,{fallback:W("div",{children:"Loading..."}),children:W(_t,{children:Mo(Ae,{path:"/",element:W($t,{rawList:e,filterCategory:t,sortOrder:i,setFilterCategory:n,setSortOrder:a}),children:[W(Ae,{index:!0,element:W(tr,{flipKey:`${o}-${t}-${i}-${s.length}`,children:W("div",{className:"project-list",children:d.map((u,h)=>W("div",{className:"project-row",children:u.map(p=>W(rr,{flipId:p.path,children:W("div",{className:"card-wrap",children:W(ar,{project:p})})},p.path))},`row-${o}-${h}`))})})}),Object.entries(aa).map(([u,h])=>W(Ae,{path:u,element:W(h,{})},u))]})})})})}import{jsx as Ao}from"react/jsx-runtime";var Po=jo.createRoot(document.getElementById("root"));Po.render(Ao(ur,{}));
