@@ -2,6 +2,7 @@
 title: Guidex (AI)
 description: AI Skiing Coach
 category: General
+order: 2
 createDate: 2025-09-11
 updateDate: 2025-09-11
 ---

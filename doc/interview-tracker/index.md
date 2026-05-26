@@ -2,6 +2,7 @@
 title: Interview Tracker
 description: Personal Interview Progress Platform
 category: General
+order: 1
 createDate: 2025-09-22
 updateDate: 2025-09-22
 ---
@@ -50,6 +51,15 @@ Job searches create scattered spreadsheets, sticky notes, and endless tabs. I de
 * **Firebase Auth** (Google) and **Firestore**.
 * Event‑sourced status history in `users/{uid}/events` powers the **per‑app timeline chart**.
 * **Recharts** is used in a restraint: defaults + gridlines + tooltips; no heavy theming to keep the UI calm.
+
+
+## System Flow (Current)
+
+![Architecture](./architecture.png)
+
+## Trust + Auth Boundaries
+
+![Auth](./auth.png)
 
 # Release
 

@@ -5,6 +5,7 @@
     "title": "IOC Page Inspector",
     "description": "Page Resource Capture Plugin & Winter Olympics Demo Client",
     "category": "General",
+    "order": "999",
     "createDate": "2025-07-18",
     "updateDate": "2025-07-18"
   },
@@ -14,6 +15,7 @@
     "title": "Portfolio Auto-Generator",
     "description": "Elegant Developer Portfolio Builder from Markdown Files.",
     "category": "General",
+    "order": "999",
     "createDate": "2025-07-18",
     "updateDate": "2025-07-18"
   },
@@ -23,6 +25,7 @@
     "title": "Experience Insight Platform",
     "description": "Efficient UI Validation Toolkit for Designers and Developers",
     "category": "General",
+    "order": "3",
     "createDate": "2025-07-18",
     "updateDate": "2025-07-18"
   },
@@ -32,6 +35,7 @@
     "title": "Guidex (AI)",
     "description": "AI Skiing Coach",
     "category": "General",
+    "order": "2",
     "createDate": "2025-09-11",
     "updateDate": "2025-09-11"
   },
@@ -41,6 +45,7 @@
     "title": "Guidex (Coach-side backend)",
     "description": "An Online ski coach application",
     "category": "General",
+    "order": "999",
     "createDate": "2025-09-20",
     "updateDate": "2025-09-20"
   },
@@ -50,6 +55,7 @@
     "title": "Interview Tracker",
     "description": "Personal Interview Progress Platform",
     "category": "General",
+    "order": "1",
     "createDate": "2025-09-22",
     "updateDate": "2025-09-22"
   }
